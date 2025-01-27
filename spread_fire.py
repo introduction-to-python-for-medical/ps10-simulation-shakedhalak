@@ -9,13 +9,13 @@ def spread_fire(grid):
         for j in range(grid_size):
             if grid[i][j] == 1:
                 neighbors = []
-                if i>0 :
+                if i > 0 :
                     neighbors.append(grid[i-1][j])
-                if i<grid_size-1:
-                    neihbors.append(grid[i+1][j])
-                if j>0:
+                if i < grid_size-1:
+                    neighbors.append(grid[i+1][j])
+                if j > 0:
                     neighbors.append(grid[i][j-1])
-                if j<grid_size-1:
+                if j < grid_size-1:
                     neighbors.append(grid[i][j+1])
                 
                 
